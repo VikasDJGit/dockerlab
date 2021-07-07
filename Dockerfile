@@ -11,4 +11,9 @@ WORKDIR /src
 
 RUN git clone  https://github.com/VikasDJGit/dockerlab.git
 
+RUN cp /src/dockerlab/index.html /usr/share/nginx/html/
+
+CMD ["nginx", "-g", "daemon off;"]
+
+
 
